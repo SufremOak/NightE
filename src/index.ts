@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 import path from 'path';
+import chalk from 'chalk';
 
 const app = express();
 const port = 3000;
@@ -11,5 +12,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-  console.log(`NightE frontend running at http://localhost:${port}`);
+  console.log(chalk.magenta(`NightE frontend running at http://localhost:${port}`));
 });

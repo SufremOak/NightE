@@ -19,7 +19,7 @@ async fn index() -> &'static str {
 }
 
 #[launch]
-fn rocket() -> _ {
+async fn rocket() -> _ {
     rocket::build()
         .mount("/", routes![index])
         .mount("/static", FileServer::from(relative!("static")))
@@ -27,7 +27,15 @@ fn rocket() -> _ {
 }
 
 pub async fn webStart() -> bool {
-    todo!();
+    let _rocket = rocket().await; // Actually launch the rocket
+    true // Or return the rocket instance if you need it elsewhere
 }
 
-fn main() {}
+#[tokio::main]
+async fn main() {
+    if webStart().await {
+        println!("Web server started successfully.");
+    } else {
+        println!("Failed to start web server.");
+    }
+}
