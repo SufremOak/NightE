@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NightE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.21.2/min/vs/editor/editor.main.css">
+</head>
+<body>
+  <div id="editor" style="width:100vw;height:100vh;"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.21.2/min/vs/loader.js"></script>
+  <script>
+    require.config({ paths: { 'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.21.2/min/vs' }});
+    require(['vs/editor/editor.main'], function() {
+      monaco.editor.create(document.getElementById('editor'), {
+        value: '// Start coding...',
+        language: 'javascript'
+      });
+    });
+  </script>
+</body>
+</html>
