@@ -1,0 +1,13 @@
+{
+  "name": "NightE",
+  "version": "0.0.1",
+  "description": "The next-gen code editor",
+  "main": "src/index.js",
+  "author": "StumbDev <stumbledeveloper@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "typescript": "^5.8.2",
+    "webpack": "^5.98.0"
+  }
+}

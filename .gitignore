@@ -1,0 +1,71 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.nyc_output/
+.cache/
+coverage/
+dist/
+build/
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+.rustup/
+/debug/
+/release/
+
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Editor specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Other common files
+*.log
+
+
+# If you're using Docker
+.dockerignore
+Dockerfile.*.backup
+Dockerfile.old
+
+# Optional: Ignore compiled binaries and intermediate build files specific to your OS
+# macOS
+*.dSYM/
+
+# Windows
+*.pdb
+*.exe
+*.ilk
+*.exp
+*.lib
+
+# Linux
+*.o
+*.a
+*.so
+
+
+# If you're using a database (example: SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+
+# If you're using Electron
+# See https://github.com/electron-userland/electron-builder/wiki/Ignore-file
+
+# Files specific to your project
+# Add them here, for example:
+# config.js.example
+# secrets.js
